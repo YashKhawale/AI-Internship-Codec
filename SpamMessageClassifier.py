@@ -16,7 +16,7 @@ print("\nLoading Dataset...")
 # Load dataset (keep SMSSpamCollection in same folder)
 try:
     # Corrected path to the dataset
-    df = pd.read_csv("data/SMSSpamCollection", sep='\t', names=["label", "message"])
+    df = pd.read_csv("/SMSSpamCollection", sep='\t', names=["label", "message"])
 except Exception as e:
     print(f"ERROR: Could not load dataset. Make sure 'SMSSpamCollection' is in the correct path.")
     print(f"Details: {e}")
